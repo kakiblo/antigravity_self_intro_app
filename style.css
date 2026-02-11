@@ -264,20 +264,21 @@ body {
 }
 
 .project-image {
-    height: 200px;
+    height: 250px;
     background: #e2d9ce;
     position: relative;
     overflow: hidden;
 }
 
-/* Placeholder pattern for images */
-.project-image::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(#c8bcae 1px, transparent 1px);
-    background-size: 20px 20px;
-    opacity: 0.5;
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
 }
 
 .project-info {
