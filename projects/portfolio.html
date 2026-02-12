@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Generator | Project Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail-hero {
+            padding: 120px 0 60px;
+            background-color: var(--alt-bg);
+            text-align: center;
+        }
+
+        .project-content {
+            padding: 80px 0;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .detail-img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 40px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Portfolio.</a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail-hero">
+        <div class="container">
+            <h1>Portfolio Generator</h1>
+            <p>Automated high-end portfolio creation from simple configs.</p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Jinja2</span>
+                <span class="tag">Markdown</span>
+                <span class="tag">AWS S3</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <div class="container">
+            <img src="../images/portfolio.png" alt="Portfolio Generator Mockup" class="detail-img">
+            <div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                <h2>Overview</h2>
+                <p>Developing a professional portfolio shouldn't take weeks. This tool allows developers and creatives
+                    to input their data in YAML or JSON format and automatically generates a static website hosted on
+                    AWS S3. It includes pre-built themes like the one you are seeing now!</p>
+
+                <h2 style="margin-top: 40px;">Key Features</h2>
+                <ul>
+                    <li>Instant generation of static site from configurations</li>
+                    <li>Built-in SEO optimization and responsive designs</li>
+                    <li>Direct deployment to GitHub Pages or AWS S3</li>
+                    <li>Customizable components via CSS variables</li>
+                </ul>
+
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Hitomi Kakizaki. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

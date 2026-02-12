@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App | Project Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail-hero {
+            padding: 120px 0 60px;
+            background-color: var(--alt-bg);
+            text-align: center;
+        }
+
+        .project-content {
+            padding: 80px 0;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .detail-img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 40px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Portfolio.</a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail-hero">
+        <div class="container">
+            <h1>Task Management App</h1>
+            <p>A collaborative Kanban dashboard for modern teams.</p>
+            <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Socket.io</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <div class="container">
+            <img src="../images/task_app.png" alt="Task App Mockup" class="detail-img">
+            <div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                <h2>Overview</h2>
+                <p>This application was designed to solve the complexity of team project tracking. It features a
+                    drag-and-drop Kanban board, real-time updates using WebSockets, and a minimalist design that reduces
+                    cognitive load. The backend is powered by Node.js, providing a fast and scalable API.</p>
+
+                <h2 style="margin-top: 40px;">Key Features</h2>
+                <ul>
+                    <li>Real-time board synchronization across multiple users</li>
+                    <li>Drag-and-drop task movement (Kanban style)</li>
+                    <li>File attachments and threaded comments on tasks</li>
+                    <li>Progress charts and productivity analytics</li>
+                </ul>
+
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Hitomi Kakizaki. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

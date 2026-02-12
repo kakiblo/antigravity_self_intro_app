@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform | Project Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail-hero {
+            padding: 120px 0 60px;
+            background-color: var(--alt-bg);
+            text-align: center;
+        }
+
+        .project-content {
+            padding: 80px 0;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .tag {
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .detail-img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin: 40px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="../index.html" class="logo">Portfolio.</a>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="project-detail-hero">
+        <div class="container">
+            <h1>E-Commerce Platform</h1>
+            <p>A high-end shopping experience for luxury home decor.</p>
+            <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">Stripe</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Vanilla JS</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <div class="container">
+            <img src="../images/ecommerce.png" alt="E-Commerce Mockup" class="detail-img">
+            <div style="max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                <h2>Overview</h2>
+                <p>This project focused on creating a seamless and aesthetically pleasing shopping experience. Built
+                    with Django on the backend and a reactive frontend using Vanilla JavaScript, it handles complex
+                    workflows like cart management, dynamic searching, and secure payment processing via Stripe.</p>
+
+                <h2 style="margin-top: 40px;">Key Features</h2>
+                <ul>
+                    <li>Responsive grid layout for product browsing</li>
+                    <li>Real-time stock management and cart updates</li>
+                    <li>Secure checkout with Stripe integration</li>
+                    <li>User authentication and order history tracking</li>
+                </ul>
+
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Hitomi Kakizaki. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

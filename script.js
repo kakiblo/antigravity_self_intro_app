@@ -45,10 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 const response = await fetch('https://script.google.com/macros/s/AKfycbwNr7C26UGXuYdGt0jX0i5QoqRTJxTT7-ySPZbmn2nK08Usjr6knddgZzBOskaT_DjT/exec', {
                     method: 'POST',
-                    mode: 'no-cors', // GAS web app requires no-cors for simple implementation
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
+                    mode: 'no-cors',
                     body: JSON.stringify(data)
                 });
 
